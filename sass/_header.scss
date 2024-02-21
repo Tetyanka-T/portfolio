@@ -1,0 +1,224 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 10px 0;
+    // background-color: var(--main-color);
+}
+.header__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    & img {
+        width: 100%;
+        height: auto;
+    }
+}
+.header__menu___list {
+    & li {
+        position: relative;
+        margin-right: 20px;
+        
+    }
+    & li:last-child {
+        margin-right: 0;
+    }
+}
+.header__menu___link {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+}
+
+.header__menu__sub-list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    min-width: 100px;
+
+    & li {
+        margin-bottom: 10px;
+        
+    }
+    & li:last-child {
+        margin-bottom: 0;
+    }
+}
+.header__menu__sub-link {
+    color: #fff;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.header__menu___arrow {
+    display: none;
+}
+body._pc {
+    & .header__menu___list {
+        & li:hover {
+            & .header__menu__sub-list {
+                opacity: 1;
+                visibility: visible;
+                transform: translate(0px, 0px);
+                pointer-events: all;
+            }
+        }
+    }
+}
+body._touch {
+    & .header__menu___list {
+        & li {
+            display: flex;
+            align-items: center;  
+            &._active {
+                .header__menu__sub-list {
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translate(0px, 0px);
+                    pointer-events: all;
+                }
+                & .header__menu___arrow {
+                    transform: rotate(-180deg)
+                }
+            } 
+        }
+   
+    & .header__menu___arrow {
+        display: block;
+        width: 0;
+        height: 0;
+        margin-left: 10px;
+        transition: transform 0.3s ease 0s;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid #fff
+    }
+  }
+}
+.header__burger {
+    display: none;
+}
+.header__burger__icon-cross {
+    display: none;
+}
+@media screen and (min-width: 767px) {
+    .header__menu___list {
+        display: flex;
+        align-items: center;
+
+        & li {
+            margin-bottom: 10px;
+            
+        }
+    }
+    .header__menu__sub-list {
+        transform: translate(0px, 10%);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__burger {
+        z-index: 20;
+        display: block;
+        // position: relative;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        background-color: transparent;
+
+        &._active {
+           & .header__burger__icon-cross {
+                fill: #fff;
+                display: block;
+            }
+           & .header__burger__icon-menu {
+                display: none;
+            }
+        }
+    }
+  
+      .header__menu {
+        position: fixed;
+        top: 0;
+        left: -150%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 130px 30px 30px 30px;
+        transition: all 0.3s ease 0s;
+        overflow: auto;
+
+        &._active {
+            left: 0;
+        }
+
+        &::before {
+            content: "";
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 70px;
+            z-index: 2;
+        }
+    }
+    .header__menu___list {
+        & li {
+            margin-bottom: 30px;
+            
+        }
+        & li:last-child {
+            margin-bottom: 0;
+        }
+        & li._active .header__menu__sub-list {
+            display: block;
+        }
+    }
+    .header__menu___link {
+        font-size: 24px;
+        color: #fff;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .header__menu__sub-list {
+        top: 10;
+        left: 0;
+        background-color: #fff;
+        width: 150px;
+        display: none;
+    }
+    .header__menu__sub-link {
+        font-size: 20px;
+        color: #000;
+    }
+   
+}

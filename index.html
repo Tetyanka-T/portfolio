@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Lato:ital,wght@0,400;0,700;1,400&family=Noto+Serif:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./sass/main.css"></link>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a href="/index.html" class="header__logo">
+                    <img src="./images/logo.gif" width="50" height="50"/>
+                </a>
+                <button type="button" class="header__burger" aria-expanded="false" aria-controls="menu-container">
+                    <svg class="header__burger__icon" width="20" height="20" aria-label="Переключатель мобильного меню">
+                        <use class="header__burger__icon-cross" href="./images/sprite.svg#menu-right"></use>
+                        <use class="header__burger__icon-menu" href="./images/sprite.svg#menu-center"></use>
+                    </svg> 
+                </button>
+           
+                <nav class="header__menu">
+                    <ul class="header__menu___list">
+                        <li class="header__menu___item">
+                            <a data-goto=".section__skils" class="header__menu___link" href="">Навички</a>
+                        </li>
+                        <li class="header__menu___item">
+                            <a data-goto=".section__project" class="header__menu___link" href="">Проекти</a>
+                        </li>
+                        <li class="header__menu___item">
+                            <a class="header__menu___link" href="">Контакти</a>
+                            <span class="header__menu___arrow"></span>
+                            <ul class="header__menu__sub-list">
+                                <li class="header__menu__sub-item">
+                                    <a href="" class="header__menu__sub-link">phone</a>
+                                </li>
+                                <li class="header__menu__sub-item">
+                                    <a href="" class="header__menu__sub-link">mail</a>
+                                </li>
+                                <li class="header__menu__sub-item">
+                                    <a href="" class="header__menu__sub-link">githab</a>
+                                </li>
+                                <li class="header__menu__sub-item">
+                                    <a href="" class="header__menu__sub-link">linI</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+     
+            </div>
+        </header>
+        <main>
+            <section class="section__hero">
+                <img src="./images/hero.jpg"/>
+                <div class="container hero">
+                    <h1 class="section__title">Welcome to my portfolio</h1>
+                    <p class="section__text"></p>
+                </div>
+            </section>
+            <section class="section section__skils" id="skils">
+                <div class="container">
+                    <h2 class="section__title">Skils</h2>
+                    <p>,asjfvnse;bvse;bn;seknb;sontb;snbaw,ebclakjvblabv</p>
+                    <p>,asjfvnse;bvse;bn;seknb;sontb;snbaw,ebclakjvblabv</p>
+                    <p>,asjfvnse;bvse;bn;seknb;sontb;snbaw,ebclakjvblabv</p>
+                    <p>,asjfvnse;bvse;bn;seknb;sontb;snbaw,ebclakjvblabv</p>
+                    <p>,asjfvnse;bvse;bn;seknb;sontb;snbaw,ebclakjvblabv</p>
+                    <p>,asjfvnse;bvse;bn;seknb;sontb;snbaw,ebclakjvblabv</p>
+                    <ul class="section__skils__list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+    
+                    </ul>
+                </div>
+            </section>
+            <section class="section section__project" id="projects">
+                <div class="container">
+                    <h2 class="section__title">Projects</h2>
+                    <p>,asjfvnse;bvse;bn;seknb;sontb;snbaw,ebclakjvblabv</p>
+                    <p>,asjfvnse;bvse;bn;seknb;sontb;snbaw,ebclakjvblabv</p>
+                    <p>,asjfvnse;bvse;bn;seknb;sontb;snbaw,ebclakjvblabv</p>
+                    <p>,asjfvnse;bvse;bn;seknb;sontb;snbaw,ebclakjvblabv</p>
+                    <p>,asjfvnse;bvse;bn;seknb;sontb;snbaw,ebclakjvblabv</p>
+                    <p>,asjfvnse;bvse;bn;seknb;sontb;snbaw,ebclakjvblabv</p>
+                    <p>,asjfvnse;bvse;bn;seknb;sontb;snbaw,ebclakjvblabv</p>
+                    <ul class="section__project__list">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer id="contacts" class="footer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#a2d9ff" fill-opacity="1" d="M0,288L60,277.3C120,267,240,245,360,240C480,235,600,245,720,234.7C840,224,960,192,1080,165.3C1200,139,1320,117,1380,106.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+            </svg>
+            <div class="container">
+                <h3 class="footer__title">Contact</h3>
+                <ul class="footer__contacts-list">
+                    <li>
+                        <a href="" class="footer__contacts-list__link">phone</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__contacts-list__link">mail</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__contacts-list__link">githab</a>
+                    </li>
+                    <li>
+                        <a href="" class="footer__contacts-list__link">linI</a>
+                    </li>
+                </ul>
+                <div class="footer__gif">
+                    <img src="./images/footer.gif" alt="developer gif"/>
+                </div>
+            </div>
+           
+        </footer>
+        
+    </div>
+   
+    <script src="./js/menu.js"></script>
+    <script src="./js/screen.js"></script>
+</body>
+</html>
