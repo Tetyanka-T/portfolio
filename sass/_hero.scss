@@ -19,9 +19,13 @@
     z-index: 5;
     top: 20%;
     left: 0;
-    // & .section__title {
-       
-    // }
+    & .hero__title {
+       color: var(--black-color);
+       font-size: 32px;
+       font-weight: 600;
+       letter-spacing: 1.1px;
+      
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -32,6 +36,9 @@
     }
     .hero {
         top: 40%;
+        & .hero__title {
+            font-size: 38px;
+        }
     }
 }
 
@@ -42,6 +49,10 @@
         }
     }
     .hero {
-        top: 40%;
+        top: 50%;
+        & .hero__title {
+            font-size: 42px;
+        }
+
     }
 }

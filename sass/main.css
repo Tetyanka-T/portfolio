@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Jost, serif;
   font-size: 14px;
+  color: var(--text-color);
 }
 
 body._lock {
@@ -43,6 +44,7 @@ button {
   text-decoration: none;
   border: none;
   padding: 0;
+  background-color: #fff;
 }
 
 input {
@@ -55,7 +57,14 @@ input {
 }
 
 .section {
-  padding: 90px 0 30px 0;
+  padding: 60px 0 0px 0;
+}
+
+.section__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
 }
 
 .container {
@@ -85,7 +94,8 @@ input {
 
 :root {
   --main-color: #a2d9ff;
-  --background-color: #f5f4fa;
+  --background-color: rgba(0, 0, 0, 0.9);
+  --black-color: #0c0a00;
   --main-font: Lato, sans-serif;
   --text-color: #757575;
   --secondary-text-color: #212121;
@@ -93,7 +103,7 @@ input {
 }
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -135,32 +145,41 @@ input {
 .header__menu___link {
   font-size: 22px;
   font-weight: 500;
-  color: #fff;
+  color: var(--text-color);
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 .header__menu___link:hover {
   text-decoration: underline;
-  color: #fff;
+  color: var(--text-color);
 }
 
 .header__menu__sub-list {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: var(--background-color);
   padding: 20px;
   min-width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header__menu__sub-list li {
-  margin-bottom: 10px;
+  margin-right: 10px;
 }
 .header__menu__sub-list li:last-child {
-  margin-bottom: 0;
+  margin-right: 0;
 }
 
 .header__menu__sub-link {
-  color: #fff;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__menu__sub-link svg {
+  fill: var(--text-color);
 }
 .header__menu__sub-link:hover {
   text-decoration: underline;
@@ -180,12 +199,16 @@ body._pc .header__menu___list li:hover .header__menu__sub-list {
 body._touch .header__menu___list li {
   display: flex;
   align-items: center;
+  justify-content: start;
 }
 body._touch .header__menu___list li._active .header__menu__sub-list {
   opacity: 1;
   visibility: visible;
   transform: translate(0px, 0px);
   pointer-events: all;
+}
+body._touch .header__menu___list li._active .header__menu__sub-list svg {
+  fill: var(--text-color);
 }
 body._touch .header__menu___list li._active .header__menu___arrow {
   transform: rotate(-180deg);
@@ -198,11 +221,14 @@ body._touch .header__menu___list .header__menu___arrow {
   transition: transform 0.3s ease 0s;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 10px solid #fff;
+  border-top: 10px solid var(--text-color);
 }
 
 .header__burger {
   display: none;
+}
+.header__burger svg {
+  fill: var(--black-color);
 }
 
 .header__burger__icon-cross {
@@ -214,7 +240,7 @@ body._touch .header__menu___list .header__menu___arrow {
     display: flex;
     align-items: center;
   }
-  .header__menu___list li {
+  .header__menu___list .header__menu___item {
     margin-bottom: 10px;
   }
   .header__menu__sub-list {
@@ -223,6 +249,9 @@ body._touch .header__menu___list .header__menu___arrow {
     visibility: hidden;
     pointer-events: none;
     transition: all 0.3s ease 0s;
+  }
+  body._touch .header__menu___list li._active .header__menu__sub-list svg {
+    fill: var(--text-color);
   }
 }
 @media screen and (max-width: 767px) {
@@ -264,18 +293,18 @@ body._touch .header__menu___list .header__menu___arrow {
     height: 70px;
     z-index: 2;
   }
-  .header__menu___list li {
+  .header__menu___list .header__menu___item {
     margin-bottom: 30px;
   }
-  .header__menu___list li:last-child {
+  .header__menu___list .header__menu___item:last-child {
     margin-bottom: 0;
   }
   .header__menu___list li._active .header__menu__sub-list {
-    display: block;
+    display: flex;
   }
   .header__menu___link {
     font-size: 24px;
-    color: #fff;
+    color: var(--text-color);
     letter-spacing: 2px;
     text-transform: uppercase;
   }
@@ -283,12 +312,11 @@ body._touch .header__menu___list .header__menu___arrow {
     top: 10;
     left: 0;
     background-color: #fff;
-    width: 150px;
+    width: 200px;
     display: none;
   }
   .header__menu__sub-link {
-    font-size: 20px;
-    color: #000;
+    font-size: 18px;
   }
 }
 .section__hero {
@@ -311,6 +339,12 @@ body._touch .header__menu___list .header__menu___arrow {
   top: 20%;
   left: 0;
 }
+.hero .hero__title {
+  color: var(--black-color);
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+}
 
 @media screen and (min-width: 768px) {
   .section__hero img {
@@ -319,23 +353,60 @@ body._touch .header__menu___list .header__menu___arrow {
   .hero {
     top: 40%;
   }
+  .hero .hero__title {
+    font-size: 38px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section__hero img {
     height: 800px;
   }
   .hero {
-    top: 40%;
+    top: 50%;
+  }
+  .hero .hero__title {
+    font-size: 42px;
   }
 }
+.about__text {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .section__about {
+    padding-top: 250px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section__about {
+    padding-top: 450px;
+  }
+}
+.projects__list-item {
+  margin-bottom: 20px;
+}
+
+.projects__list-item:last-child {
+  margin-bottom: 0;
+}
+
+.projects__button {
+  margin: 20px 0;
+}
+
 .footer {
   position: relative;
 }
 
 .footer__title {
   position: absolute;
+  color: var(--black-color);
   top: 10%;
   left: 20;
+  font-size: 18px;
+  line-height: 1.1;
 }
 
 .footer__gif {
@@ -357,9 +428,30 @@ body._touch .header__menu___list .header__menu___arrow {
   top: 40%;
   left: 20;
 }
+.footer__contacts-list li {
+  margin-bottom: 10px;
+}
+.footer__contacts-list li:last-child {
+  margin-bottom: 0;
+}
+
+.footer__contacts-list__link {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+.footer__contacts-list__link svg {
+  fill: var(--text-color);
+  margin-right: 5px;
+}
 
 @media screen and (min-width: 768px) {
   .footer__gif {
     width: 200px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__contacts-list {
+    top: 30%;
   }
 }
