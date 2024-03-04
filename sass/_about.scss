@@ -9,6 +9,11 @@
     .section__about {
         padding-top: 250px;
     }
+    .about__description {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
     
 }
 @media screen and (min-width: 1200px) {

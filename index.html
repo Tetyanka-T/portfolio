@@ -78,11 +78,20 @@
             </section>
             <section class="section section__about" id="about">
                 <div class="container">
-                    <p class="about__text">Мене звати Тетяна. Я frontend розробник.</p>
-                    <p class="about__text">Створюю сайти різної складності (HTML, JS, React js, Next js).</p>
-                    <p class="about__text">Працюю від ідеї до готового сайту, оптимізованого для пошукових систем.</p>
-                    <p class="about__text">Моя мета — створювати продукти, які допомагатимуть людям покращувати та розвивати своє життя.</p>
-                    <p class="about__text">Відкрита до нових знань, відповідальна та готова виконувати складні завдання.</p>
+                    <div class="about__description">
+                        <div>
+                            <p class="about__text">Мене звати Тетяна. Я frontend розробник.</p>
+                            <p class="about__text">Створюю сайти різної складності (HTML, JS, React js, Next js).</p>
+                            <p class="about__text">Працюю від ідеї до готового сайту, оптимізованого для пошукових систем.</p>
+                            <p class="about__text">Моя мета — створювати продукти, які допомагатимуть людям покращувати та розвивати своє життя.</p>
+                            <p class="about__text">Відкрита до нових знань, відповідальна та готова виконувати складні завдання.</p>
+                        </div>
+                        
+                        <div class="item__container-img">
+                            <img src="./images//me.jpg" alt="developer photo"/>
+                        </div>
+                    </div>
+                    
 
                 </div>
             </section>
@@ -91,43 +100,57 @@
                     <h2 class="section__title">Проекти</h2>
                     <ul class="projects__list">
                         <li class="projects__list-item">
-                            <h3>Сайт простору здоров’я Shanti_Space</h3>
-                            <img src="" alt="фото проекту Shanti_Space"/>
-                            <p>Поставлена задача: створити сайт-візитку простору за різними напрямами тренувань, ведення блогу з корисними статтями на тему здоров'я, реєстрація користувачів, взаємодія з користувачами.</p>
-                            <p>Виконано: Сайт під ключ. Проект реалізовано за допомогою Next js. Адаптативна та симатична верстка. Для блогу підключено CSM. Іконки-асани зроблені з малюнків художниці. Реєстрація користувачів здійнюється як за допомогою Google так і внесенням своїх даних. Для зареєстрованих користувачів відкривається чат для спілкування та змога задати питання інструктору.</p>
-                            <p>Технології: Next js, NextAuth, mongoose, Prisma, MongoDB, contentful, tailwindcss, typescript, pusher, react-hook-form, GoogleAPI</p>
-                            <p>Посилання:
+                            <h3 class="item__title">Сайт простору здоров’я Shanti_Space</h3>
+                            <div class="item__container-img">
+                                <img src="./images/shanti-cover.jpg" alt="фото проекту Shanti_Space" class="item__img"/>
+                            </div>
+                            
+                            <p class="item__text"><span>Поставлена задача: </span>створити сайт-візитку простору за різними напрямами тренувань, ведення блогу з корисними статтями на тему здоров'я, реєстрація користувачів, взаємодія з користувачами.</p>
+                            <p class="item__text"><span>Виконано: </span>cайт під ключ (від дизайну до оптимізації для пошукових систем). Проект реалізовано за допомогою Next js. Адаптативна та симатична верстка. Для блогу підключено CSM. Іконки-асани зроблені з малюнків художниці. Реєстрація користувачів здійнюється як за допомогою Google так і внесенням своїх даних. Для зареєстрованих користувачів відкривається чат для спілкування та змога задати питання інструктору. Створено бізнес профіль для відображення простору на картах Google.</p>
+                            <p class="item__text"><span>Технології: </span>Next js, NextAuth, mongoose, Prisma, MongoDB, contentful, tailwindcss, typescript, pusher, react-hook-form, GoogleAPI</p>
+                            <p class="item__text"><span>Посилання: </span>
                                 <a href="https://shantispace.com.ua/" target="_blank">shantispace.com.ua</a>
                             </p>
                             
                         </li>
                         <li class="projects__list-item">
-                            <h3>Інтернет-магазин композицій із повітряних кульок</h3>
-                            <img src="" alt="фото проекту Весела Витіка"/>
-                            <p>Поставлена задача: розробити інтернет магазин</p>
-                            <p>Виконано: Сайт під ключ. Проект реалізовано за допомогою Next js. Адаптативна та симатична верстка.</p>
-                            <p>Технології: frontend - Next js, MUI; backend - Node js, MongoDB, Sendgrid, розробка бази даних, верстання електронного листа; admin - React, Formik,  Redux, SASS, MUI.</p>
-                            <p>Посилання:
+                            <h3 class="item__title">Інтернет-магазин композицій із повітряних кульок</h3>
+                            <div class="item__container-img">
+                                <img src="./images/balloons-cover.jpg" alt="фото проекту Весела Витіка" class="item__img"/>
+                            </div>
+                           
+                            <p class="item__text"><span>Поставлена задача: </span>розробити інтернет магазин по категоріям свята.</p>
+                            <p class="item__text"><span>Виконано: </span>cайт під ключ (від дизайну до оптимізації для пошукових систем). Проект реалізовано за допомогою Next js. Адаптативна та симатична верстка. Реалізовано каталог композицій по тематиці свята. Для зручності користувача розроблено сторінку улюблених товарів, з можливістю додавання у кошик. В кошику товарів можна регулювати свої покупки (додавати/віднімати або видаляти композиції). Реалізовано сторінку пошуку за ключовими словами.
+                               Розробка та підключення бази даних. Адміністратор приймає замовлення та коригує композиції на окремому сайті, який створений на React js. Після оброблення замовлення адміністратором замовнику надходить email з деталями замовлення (верстання електроного листа).
+                            </p>
+                            <p class="item__text"><span>Технології: </span>frontend - Next js; backend - Node js, Express, Mongoose, Sendgrid; admin - React, Formik, Redux (redux-thunk), SASS, MUI, axios.</p>
+                            <p class="item__text"><span>Посилання: </span>
                                 <a href="https://veselavutivka.com.ua/" target="_blank">veselavutivka.com.ua</a>
                             </p>
                         </li>
                         <li class="projects__list-item">
-                            <h3>Сайт-візитка для салону краси</h3>
-                            <img src="" alt="фото проекту NashaStudio"/>
-                            <p>Поставлена задача: </p>
-                            <p>Виконано: Сайт під ключ. Реалізована адаптативна та симатична верстка.</p>
-                            <p>Технології: HTML, JS, SCSS</p>
-                            <p>Посилання:
+                            <h3 class="item__title">Сайт-візитка для студії краси</h3>
+                            <div class="item__container-img">
+                                <img src="./images/nashastudio-cover.jpeg" alt="фото проекту NashaStudio" class="item__img"/>
+                            </div>
+                            
+                            <p class="item__text"><span>Поставлена задача: </span>створити сайт-візитку для студії краси.</p>
+                            <p class="item__text"><span>Виконано: </span>cайт під ключ (від дизайну до оптимізації для пошукових систем). Реалізована адаптативна та симатична верстка. Створено дизайн прайс-листів послуг. Створено бізнес профіль для відображення студії на картах Google.</p>
+                            <p class="item__text"><span>Технології: </span>HTML, JS, SCSS</p>
+                            <p class="item__text"><span>Посилання: </span>
                                 <a href="https://nashastudio.com.ua/" target="_blank">nashastudio.com.ua</a>
                             </p>
                         </li>
                         <li class="projects__list-item">
-                            <h3>Сайт-візитка інженера землевпорядника</h3>
-                            <img src="" alt="фото проекту для інженера-землевпорядника"/>
-                            <p>Поставлена задача: </p>
-                            <p>Виконано: Проект реалізовано за допомогою Next js. Адаптативна та симатична верстка.</p>
-                            <p>Технології: HTML, JS, SCSS</p>
-                            <p>Посилання:
+                            <h3 class="item__title">Сайт-візитка інженера землевпорядника</h3>
+                            <div class="item__container-img">
+                                <img src="./images/kadnomer-cover.jpeg" alt="фото проекту для інженера-землевпорядника" class="item__img"/>
+                            </div>
+                            
+                            <p class="item__text"><span>Поставлена задача: </span>створити сайт-візитку інженера-землевпорядника.</p>
+                            <p class="item__text"><span>Виконано: </span>cайт під ключ (від дизайну до оптимізації для пошукових систем). Проект реалізовано за допомогою Next js. Адаптативна та симатична верстка. Текстове наповнення сайту.</p>
+                            <p class="item__text"><span>Технології: </span>HTML, JS, SCSS</p>
+                            <p class="item__text"><span>Посилання: </span>
                                 <a href="https://kadastrovyy-nomer.com.ua/" target="_blank">kadastrovyy-nomer.com.ua</a>
                             </p>
                         </li>
