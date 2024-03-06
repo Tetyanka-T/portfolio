@@ -18,16 +18,38 @@
     position: absolute;
     z-index: 5;
     top: 20%;
-    left: 0;
-    & .hero__title {
-       color: var(--black-color);
-       font-size: 32px;
-       font-weight: 600;
-       letter-spacing: 1.1px;
-      
-    }
+    left: 0%;
+}
+.hero__title {
+    color: var(--black-color);
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    
+    // transform: translate(0px, 120%);
+    // opacity: 0;
+    // transition: all 0.8s ease 0s;
+    
+    // &._anime {
+    //     transform: translate(0px, 0px);
+    //     opacity: 1;
+    // }
 }
 
+.hero__text {
+    color: var(--black-color);
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    // transform: translate(0px, 120%);
+    // opacity: 0;
+    // transition: all 0.8s ease 0s;
+    // &._anime {
+    //     transform: translate(0px, 0px);
+    //     opacity: 1;
+    //     transition: all 0.8s ease 0.4s;
+    // }
+}
 @media screen and (min-width: 768px) {
     .section__hero {
         & img {
@@ -37,6 +59,9 @@
     .hero {
         top: 40%;
         & .hero__title {
+            font-size: 38px;
+        }
+        & .hero__text {
             font-size: 38px;
         }
     }
@@ -51,7 +76,10 @@
     .hero {
         top: 50%;
         & .hero__title {
-            font-size: 42px;
+            font-size: 50px;
+        }
+        & .hero__text {
+            font-size: 50px;
         }
 
     }

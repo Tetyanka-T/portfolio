@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +12,9 @@
     <div class="wrapper">
         <header class="header">
             <div class="header__container">
-                <a href="/index.html" class="header__logo">
+                <a href="/en.html" class="header__logo">
                     <img src="./images/logo.gif" width="50" height="50"/>
                 </a>
-                
                 <button type="button" class="header__burger" aria-expanded="false" aria-controls="menu-container">
                     <svg class="header__burger__icon" width="20" height="20" aria-label="Переключатель мобильного меню">
                         <use class="header__burger__icon-cross" href="./images/sprite.svg#menu-right"></use>
@@ -25,18 +24,18 @@
                 <nav class="header__menu">
                     <ul class="header__menu___list">
                         <li class="header__menu___item">
-                            <a class="header__menu___link" href="./en.html">
-                                <img src="./images/usa.png" alt="american flag" width="40px" height="40px"/>
+                            <a class="header__menu___link" href="./index.html">
+                                <img src="./images/uk.png" alt="american flag" width="40px" height="40px"/>
                             </a>
                         </li>
                         <li class="header__menu___item">
-                            <a data-goto=".section__about" class="header__menu___link" href="">Про мене</a>
+                            <a data-goto=".section__about" class="header__menu___link" href="">About me</a>
                         </li>
                         <li class="header__menu___item">
-                            <a data-goto=".section__project" class="header__menu___link" href="">Проекти</a>
+                            <a data-goto=".section__project" class="header__menu___link" href="">Projects</a>
                         </li>
                         <li class="header__menu___item">
-                            <a class="header__menu___link" href="">Контакти</a>
+                            <a class="header__menu___link" href="">Contacts</a>
                             <span class="header__menu___arrow"></span>
                             <ul class="header__menu__sub-list">
                                 <li class="header__menu__sub-item">
@@ -77,8 +76,8 @@
             <section class="section__hero">
                 <img src="./images/hero.jpg"/>
                 <div class="container hero">
-                    <h1 class="hero__title">Welcome to</h1>
-                    <p class="hero__text">my portfolio</p>
+                    <h1 class="hero__title">Welcome to my portfolio</h1>
+                    <p class="section__text"></p>
                 </div>
             </section>
             <section class="section section__about" id="about">
@@ -95,12 +94,12 @@
                 </div>
                 <div class="container">
                     <div class="about__description">
-                        <div class="description__text">
-                            <p class="about__text">Мене звати Тетяна. Я frontend розробник.</p>
-                            <p class="about__text">Створюю сайти різної складності (HTML, JS, React js, Next js).</p>
-                            <p class="about__text">Працюю від ідеї до готового сайту, оптимізованого для пошукових систем.</p>
-                            <p class="about__text">Моя мета — створювати продукти, які допомагатимуть людям покращувати та розвивати своє життя.</p>
-                            <p class="about__text">Відкрита до нових знань, відповідальна та готова виконувати складні завдання.</p>
+                        <div>
+                            <p class="about__text">My name Tetiana. I`m frontend developer.</p>
+                            <p class="about__text">I create sites of various complexity (HTML, JS, React js, Next js).</p>
+                            <p class="about__text">I work from an idea to a finished site optimized for search engines.</p>
+                            <p class="about__text">My goal is to create products that help people improve and develop their lives.</p>
+                            <p class="about__text">Open to new knowledge, responsible and ready to perform complex tasks.</p>
                         </div>
                         <div class="item__container-img">
                             <img src="./images/me.jpg" alt="developer photo"/>
@@ -110,65 +109,65 @@
             </section>
             <section class="section section__project" id="projects">
                 <div class="container">
-                    <h2 class="section__title">Проекти</h2>
+                    <h2 class="section__title">Projects</h2>
                     <ul class="projects__list">
                         <li class="projects__list-item">
-                            <h3 class="item__title">Сайт простору здоров’я Shanti_Space</h3>
+                            <h3 class="item__title">Site of health space Shanti_Space</h3>
                             <div class="item__container-img">
                                 <img src="./images/shanti-cover.jpg" alt="фото проекту Shanti_Space" class="item__img"/>
                             </div>
-                            <p class="item__text"><span>Поставлена задача: </span>створити сайт-візитку простору за різними напрямами тренувань, ведення блогу з корисними статтями на тему здоров'я, реєстрація користувачів, взаємодія з користувачами.</p>
-                            <p class="item__text"><span>Виконано: </span>cайт під ключ (від дизайну до оптимізації для пошукових систем). Проект реалізовано за допомогою Next js. Адаптативна та симатична верстка. Для блогу підключено CSM. Іконки-асани зроблені з малюнків художниці. Реєстрація користувачів здійнюється як за допомогою Google так і внесенням своїх даних. Для зареєстрованих користувачів відкривається чат для спілкування та змога задати питання інструктору. Створено бізнес профіль для відображення простору на картах Google.</p>
-                            <p class="item__text"><span>Технології: </span>Next js, NextAuth, mongoose, Prisma, MongoDB, contentful, tailwindcss, typescript, pusher, react-hook-form, GoogleAPI</p>
-                            <p class="item__text"><span>Посилання: </span>
+                            <p class="item__text"><span>The task is: </span>create a site-business card of space for various areas of training, blogging with useful articles on the topic of health, user registration, interaction with users.</p>
+                            <p class="item__text"><span>Done: </span>turnkey site (from design to optimization for search engines). The project was implemented using Next js. Adaptive and schematic layout. CSM is connected for the blog. Asana icons are made from the artist's drawings. User registration is done both with the help of Google and by entering personal data. For registered users, a chat is opened for communication and the ability to ask questions to the instructor. A business profile has been created to display space on Google maps.</p>
+                            <p class="item__text"><span>Technologies: </span>Next js, NextAuth, mongoose, Prisma, MongoDB, contentful, tailwindcss, typescript, pusher, react-hook-form, GoogleAPI</p>
+                            <p class="item__text"><span>Link: </span>
                                 <a href="https://shantispace.com.ua/" target="_blank">shantispace.com.ua</a>
                             </p>
                             
                         </li>
                         <li class="projects__list-item">
-                            <h3 class="item__title">Інтернет-магазин композицій із повітряних кульок</h3>
+                            <h3 class="item__title">Online store of balloon compositions</h3>
                             <div class="item__container-img">
                                 <img src="./images/balloons-cover.jpg" alt="фото проекту Весела Витіка" class="item__img"/>
                             </div>
                            
-                            <p class="item__text"><span>Поставлена задача: </span>розробити інтернет магазин по категоріям свята.</p>
-                            <p class="item__text"><span>Виконано: </span>cайт під ключ (від дизайну до оптимізації для пошукових систем). Проект реалізовано за допомогою Next js. Адаптативна та симатична верстка. Реалізовано каталог композицій по тематиці свята. На кожній сторінці є сортування композицій за ціною та фільтрування за ознакою. Для зручності користувача розроблено сторінку улюблених товарів, з можливістю додавання у кошик. В кошику товарів можна регулювати свої покупки (додавати/віднімати або видаляти композиції). Реалізовано сторінку пошуку за ключовими словами.
-                               Розробка та підключення бази даних. Адміністратор приймає замовлення та коригує композиції на окремому сайті, який створений на React js. Після оброблення замовлення адміністратором замовнику надходить email з деталями замовлення (верстання електроного листа).
+                            <p class="item__text"><span>The task is: </span>develop an online store by holiday categories.</p>
+                            <p class="item__text"><span>Done: </span>turnkey site (from design to optimization for search engines). The project was implemented using Next js. Adaptive and schematic layout. A catalog of compositions on the theme of the holiday has been implemented. On each page there is a sorting of compositions by price and a filter by feature. For the convenience of the user, a page of favorite products has been developed, with the possibility of adding to the cart. You can adjust your purchases in the shopping cart (add/subtract or delete compositions). The keyword search page has been implemented. Database development and connection.
+                                The administrator accepts orders and adjusts compositions on a separate site, which is built on React js. After processing the order by the administrator, the customer receives an email with order details (made a layout of an email).
                             </p>
-                            <p class="item__text"><span>Технології: </span>frontend - Next js; backend - Node js, Express, Mongoose, Sendgrid; admin - React, Formik, Redux (redux-thunk), SASS, MUI, axios.</p>
-                            <p class="item__text"><span>Посилання: </span>
+                            <p class="item__text"><span>Technologies: </span>frontend - Next js; backend - Node js, Express, Mongoose, Sendgrid; admin - React, Formik, Redux (redux-thunk), SASS, MUI, axios.</p>
+                            <p class="item__text"><span>Link: </span>
                                 <a href="https://veselavutivka.com.ua/" target="_blank">veselavutivka.com.ua</a>
                             </p>
                         </li>
                         <li class="projects__list-item">
-                            <h3 class="item__title">Сайт-візитка для студії краси</h3>
+                            <h3 class="item__title">Business card site for a beauty studio</h3>
                             <div class="item__container-img">
                                 <img src="./images/nashastudio-cover.jpeg" alt="фото проекту NashaStudio" class="item__img"/>
                             </div>
                             
-                            <p class="item__text"><span>Поставлена задача: </span>створити сайт-візитку для студії краси.</p>
-                            <p class="item__text"><span>Виконано: </span>cайт під ключ (від дизайну до оптимізації для пошукових систем). Реалізована адаптативна та симатична верстка. Створено дизайн прайс-листів послуг. Створено бізнес профіль для відображення студії на картах Google.</p>
-                            <p class="item__text"><span>Технології: </span>HTML, JS, SCSS</p>
-                            <p class="item__text"><span>Посилання: </span>
+                            <p class="item__text"><span>The task is: </span>create a business card site for a beauty studio.</p>
+                            <p class="item__text"><span>Done: </span>turnkey site (from design to optimization for search engines). Implemented adaptive and schematic layout. The design of price lists of services has been created. A business profile has been created to display the studio on Google maps.</p>
+                            <p class="item__text"><span>Technologies: </span>HTML, JS, SCSS</p>
+                            <p class="item__text"><span>Link: </span>
                                 <a href="https://nashastudio.com.ua/" target="_blank">nashastudio.com.ua</a>
                             </p>
                         </li>
                         <li class="projects__list-item">
-                            <h3 class="item__title">Сайт-візитка інженера землевпорядника</h3>
+                            <h3 class="item__title">Site-business card of a land manager engineer</h3>
                             <div class="item__container-img">
                                 <img src="./images/kadnomer-cover.jpeg" alt="фото проекту для інженера-землевпорядника" class="item__img"/>
                             </div>
                             
-                            <p class="item__text"><span>Поставлена задача: </span>створити сайт-візитку інженера-землевпорядника.</p>
-                            <p class="item__text"><span>Виконано: </span>cайт під ключ (від дизайну до оптимізації для пошукових систем). Адаптативна та симатична верстка. Текстове наповнення сайту.</p>
-                            <p class="item__text"><span>Технології: </span>HTML, JS, SCSS</p>
-                            <p class="item__text"><span>Посилання: </span>
+                            <p class="item__text"><span>The task is: </span>create site-business card of a land manager engineer</p>
+                            <p class="item__text"><span>Done: </span>turnkey site (from design to optimization for search engines). Adaptive and schematic layout. Text content of the site.</p>
+                            <p class="item__text"><span>Technologies: </span>HTML, JS, SCSS</p>
+                            <p class="item__text"><span>Link: </span>
                                 <a href="https://kadastrovyy-nomer.com.ua/" target="_blank">kadastrovyy-nomer.com.ua</a>
                             </p>
                         </li>
                     </ul>
                    
-                    <button class="projects__button">Показати більше</button>
+                    <button class="projects__button">Show more</button>
           
                     
                 </div>
@@ -179,7 +178,7 @@
                 <path fill="#a2d9ff" fill-opacity="1" d="M0,288L60,277.3C120,267,240,245,360,240C480,235,600,245,720,234.7C840,224,960,192,1080,165.3C1200,139,1320,117,1380,106.7L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
             </svg>
             <div class="container">
-                <h3 class="footer__title">Контакти</h3>
+                <h3 class="footer__title">Contacts</h3>
                 <ul class="footer__contacts-list">
                     <li class="header__menu__sub-item">
                         <a href="tel:+380975081398" class="footer__contacts-list__link">
@@ -221,8 +220,6 @@
    
     <script src="./js/menu.js"></script>
     <script src="./js/screen.js"></script>
-    <script src="./js/animation.js"></script>
     <script src="./js/thema.js"></script>
-    
 </body>
 </html>
