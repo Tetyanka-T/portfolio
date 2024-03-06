@@ -348,6 +348,17 @@ body._touch .header__menu___list .header__menu___arrow {
   letter-spacing: 1.1px;
 }
 
+.animation {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.scroll-animation {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .hero__text {
   color: var(--black-color);
   font-size: 32px;
