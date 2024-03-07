@@ -3,19 +3,7 @@
     font-size: 16px;
     font-weight: 400;
 }
-// .description__text {
 
-// }
-._anim-show {
-    transform: translate(0px, 120%);
-    opacity: 0;
-    transition: all 0.8 ease 0s;
-}
-._anim-show._anime,
-._anime ._anim-show {
-    opacity: 1;
-    transform: translate(0px, 0px);
-}
 @media screen and (min-width: 768px) {
     .section__about {
         padding-top: 250px;
