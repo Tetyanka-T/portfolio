@@ -1,6 +1,7 @@
 .section__hero {
    position: relative;
    padding: 200px 0;
+ 
    
     & img {
         position: absolute;
@@ -24,6 +25,7 @@
     font-weight: 600;
     letter-spacing: 1.1px;
     min-width: min-content;
+  
 }
 
 @media screen and (min-width: 768px) {
