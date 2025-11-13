@@ -620,6 +620,10 @@ body._touch .header__menu___list .header__menu___arrow {
   fill: var(--text-color);
   margin-right: 10px;
 }
+.footer__contacts-list__link img {
+  margin-right: 10px;
+  margin-left: -5px;
+}
 
 @media screen and (min-width: 768px) {
   .footer__gif {
